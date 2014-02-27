@@ -1,0 +1,13 @@
+<div class="container">
+  <h1>User Skills and Levels</h1>
+  <h2>Please choose a skill to edit</h2>
+
+  <% @skills.each do |skill| %>
+    <h1> Name </h1>
+    <h2><a href= "/edit/skill/<%=skill.id %>"><%= skill.name %>(<%= skill.context %>)</a><h2>
+
+    <% end %>
+
+
+  <%# TODO: display the skills and proficiency levels for each user ... %>
+</div>
